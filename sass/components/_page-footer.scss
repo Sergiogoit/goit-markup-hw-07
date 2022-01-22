@@ -1,0 +1,109 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--section1-background-color);
+}
+.nav-foot {
+  display: flex;
+  align-items: baseline;
+}
+.footer-container {
+  margin-right: 70px;
+}
+
+.footer-container__contact {
+  width: 231px;
+  height: 81px;
+  padding-bottom: 60px;
+}
+.footer-container__adress {
+  color: var(--txt-color);
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 9px;
+  transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+.footer-container__adress:hover,
+.footer-container__adress:focus {
+  color: var(--body-color);
+}
+/* подсветка ссылки при активации */
+.footer-container__adress:active,
+.footer-container__mail:active
+/* .tel-link:active,
+.nav-link:active { */ {
+  color: var(--activity-color);
+}
+.footer-container__mail {
+  color: var(--txt-color);
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 9px;
+  transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+.footer-container__tel {
+  color: var(--txt-color);
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+  font-style: normal;
+  transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+.footer-container__tel:hover,
+.footer-container__mail:hover,
+.footer-container__mail:focus {
+  color: var(--footer-link-color);
+}
+.connect {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  color: var(--body-color);
+  font-style: normal;
+  text-transform: uppercase;
+  transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+.soc-link-footer {
+  fill: var(--body-color);
+  background-color: rgb(255, 255, 255, 0.1);
+}
+.soc-foot-box {
+  fill: var(--body-color);
+}
+
+.mail-form {
+  margin-left: auto;
+}
+.mail-form__mailing {
+  font-family: Roboto;
+  font-style: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--body-color);
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.input-mail {
+  box-sizing: border-box;
+  width: 358px;
+  height: 50px;
+  background-color: var(--section1-background-color);
+  padding-left: 15px;
+  border-radius: 4px;
+  border: 1px solid var(--mail-border-color);
+  margin-top: 20px;
+  margin-right: 8px;
+  color: var(--body-color);
+}
+.button__send {
+  margin-left: 10px;
+  margin-bottom: -7px;
+  fill: var(--section2-background-color);
+}

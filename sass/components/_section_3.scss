@@ -1,0 +1,38 @@
+.our-activities {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  color: var(--main-txt-color);
+  margin-top: 0px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.activities {
+  display: flex;
+  justify-content: space-between;
+}
+
+.activities .li-worck + .li-worck {
+  margin-left: 30px;
+}
+.activities__worck::before {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  width: 370px;
+  height: 70px;
+  background-color: var(--worck-card-color);
+  transform: translatey(223px);
+}
+.activities__title {
+  position: absolute;
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--body-color);
+  text-transform: uppercase;
+  padding-top: 251px;
+  padding-left: 83px;
+  font-weight: 700;
+}

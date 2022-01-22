@@ -1,0 +1,43 @@
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.section {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.person {
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--txt-color);
+  margin: 0 0 0 0;
+}
+.web {
+  color: var(--heder-link-color);
+  font-family: raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  font-weight: 700;
+  text-decoration: none;
+  display: flex;
+}
+.web__studio {
+  font-family: raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  font-weight: 700;
+  text-decoration: none;
+}
+.web__studio--black {
+  color: var(--logo-footer-color);
+}
+.web__studio--wight {
+  color: var(--body-color);
+  margin-bottom: 20px;
+}

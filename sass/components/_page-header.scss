@@ -1,0 +1,92 @@
+.header {
+  max-width: 1600px;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* Установит стили нинжней рамки */
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--section2-background-color);
+}
+.nav-head {
+  display: flex;
+  align-items: center;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+}
+.nav-container__site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+.nav-container__site-nav .nav-container__item + .nav-container__item {
+  margin-left: 50px;
+}
+.nav-container__nav-link {
+  color: var(--main-txt-color);
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+.nav-container__nav-link--active {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--heder-link-color);
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  position: relative;
+  display: block;
+}
+.nav-container__nav-link--active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--heder-link-color);
+}
+.nav-container__nav-link--active:hover::after {
+  /* прозрачность */
+  opacity: 1;
+  /* на сколько растянуться 1 это-100% ширины */
+  transform: scaleX(1);
+}
+/* Стилизация контактогв */
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  list-style: none;
+}
+.auth-nav__link {
+  fill: var(--txt-color);
+  color: currentColor;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  /* задержка */
+  transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+.auth-nav__icon {
+  margin-right: 10px;
+}
+.auth-nav__link--mail {
+  margin-right: 30px;
+}
+.nav-container__nav-link:hover,
+.nav-container__nav-link:focus,
+.auth-nav__link:hover,
+.auth-nav__link:focus {
+  color: var(--heder-link-color);
+  fill: var(--heder-link-color);
+}

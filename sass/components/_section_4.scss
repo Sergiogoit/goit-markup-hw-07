@@ -1,0 +1,70 @@
+.section-color {
+  background-color: var(--section-background-color);
+}
+.our-team {
+  display: flex;
+  justify-content: space-between;
+}
+.team-set {
+  width: 270px;
+  background-color: var(--body-color);
+  text-align: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-set__information {
+  padding-top: 30px;
+  padding-bottom: 0px;
+}
+.team-set__name {
+  font-size: 16px;
+  line-height: 1.18;
+  font-weight: 500;
+  color: var(--main-txt-color);
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.team-set__position {
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--txt-color);
+  margin: 0 0 0 0;
+}
+/* __________________________________________________________СОЦ-СЕТИ_____________________________________ */
+.social-set {
+  display: flex;
+  width: 206px;
+  height: 44px;
+  margin-top: 16px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+
+.social-set__lable {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+}
+.social-set__link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--border-color);
+  border-radius: 50%;
+  transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+.social-set__link:hover,
+.social-set__link:focus {
+  background-color: var(--heder-link-color);
+  fill: var(--body-color);
+  border-radius: 50%;
+}
+.social-set__icon {
+  background-size: 20px;
+}

@@ -1,0 +1,30 @@
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Задает цвет основному шрифту */
+body {
+  color: var(--txt-color);
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  background: var(--body-color);
+}
+/* Убирает подчеркивание */
+/* Превращает в блочный элемент и убирает зазоры картинок- ссылок */
+a {
+  text-decoration: none;
+  display: block;
+}
