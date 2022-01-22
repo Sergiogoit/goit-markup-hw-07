@@ -1,4 +1,4 @@
-@import "./base/_palette-colors";
+@import "./utills/variables";
 @import "./base/_normalize";
 @import "./base/_base_style";
 @import "./components/_page-header";
@@ -9,4 +9,4 @@
 @import "./components/_section_4";
 @import "./components/_section_5";
 @import "./components/_portfolio";
-// @import "./components/_page-footer";
+@import "./components/_page-footer";
