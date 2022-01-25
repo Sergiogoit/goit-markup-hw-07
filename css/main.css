@@ -50,6 +50,8 @@ body {
 a {
   text-decoration: none;
   display: block;
+  display: -ms-grid;
+  display: grid;
 }
 
 .container {
@@ -421,10 +423,28 @@ a {
           border-radius: 4px;
 }
 
+.form-field input:hover,
+.form-field input:focus {
+  fill: var(--heder-link-color);
+  outline: 1px solid var(--heder-link-color);
+  -webkit-transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  -o-transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
 .form-field__icon {
   position: absolute;
   margin-left: -436px;
   margin-top: 11px;
+}
+
+.form-field__icon:hover,
+.form-field__icon:focus {
+  fill: var(--heder-link-color);
+  outline: 1px solid var(--heder-link-color);
+  -webkit-transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  -o-transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .form-field label {
@@ -655,9 +675,9 @@ a {
   width: 370px;
   height: 70px;
   background-color: var(--worck-card-color);
-  -webkit-transform: translatey(223px);
-      -ms-transform: translatey(223px);
-          transform: translatey(223px);
+  -webkit-transform: translatey(224px);
+      -ms-transform: translatey(224px);
+          transform: translatey(224px);
 }
 
 .activities__title {
@@ -820,6 +840,8 @@ a {
 .customers-list__link {
   width: 170px;
   height: 92px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
   fill: var(--border-color);
   margin: auto;
   padding: 0;
@@ -974,6 +996,10 @@ a {
   top: 0;
   left: 0;
   margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .flex-text {
