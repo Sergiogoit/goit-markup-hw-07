@@ -50,7 +50,6 @@ body {
 a {
   text-decoration: none;
   display: block;
-  display: -ms-grid;
   display: grid;
 }
 
@@ -84,8 +83,6 @@ a {
   line-height: 1.19;
   font-weight: 700;
   text-decoration: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -118,26 +115,16 @@ a {
 }
 
 .nav-head {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .nav-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .nav-container__site-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-left: 93px;
 }
@@ -153,7 +140,6 @@ a {
   font-weight: 500;
   padding-top: 32px;
   padding-bottom: 32px;
-  -webkit-transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
@@ -183,19 +169,14 @@ a {
   /* прозрачность */
   opacity: 1;
   /* на сколько растянуться 1 это-100% ширины */
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 /* Стилизация контактогв */
 .auth-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-left: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   list-style: none;
 }
 
@@ -205,14 +186,9 @@ a {
   line-height: 1.14;
   letter-spacing: 0.02em;
   font-weight: 500;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   /* задержка */
-  -webkit-transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
@@ -235,7 +211,6 @@ a {
 .main-section {
   max-width: 1600px;
   background-color: var(--section1-background-color);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hero.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero.jpg);
   text-align: center;
   color: var(--body-color);
@@ -269,7 +244,6 @@ a {
   /* Анимация появления модалки */
   opacity: 1;
   visibility: visible;
-  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -282,8 +256,7 @@ a {
 /* ____________________________________состояние модалки когда она спрятана */
 /* скеил- показывает, откуда на нас будет выезжать окно */
 .backdrop.is-hidden .modal {
-  -webkit-transform: translate(-50%, -50%) scale(0.5);
-          transform: translate(-50%, -50%) scale(0.5);
+  transform: translate(-50%, -50%) scale(0.5);
 }
 
 /* ____________________________________состояние модалки когда она спрятана */
@@ -295,23 +268,17 @@ a {
   min-height: 581px;
   min-width: 528px;
   border-radius: 4px;
-  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   background-color: var(--body-color);
-  -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*_____________________________________________ это состояние, когда окно показано */
 .close-button {
   width: 30px;
   height: 30px;
-  -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   background-color: var(--body-color);
   border-color: var(--circle-coloir);
   border-radius: 50%;
@@ -320,8 +287,7 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   /* смещение иконки при ховере */
-  -webkit-transform: translateX(241px);
-          transform: translateX(241px);
+  transform: translateX(241px);
   margin-top: 8px;
 }
 
@@ -329,7 +295,6 @@ a {
 .close-button:focus {
   cursor: pointer;
   fill: var(--heder-link-color);
-  -webkit-transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
@@ -350,13 +315,8 @@ a {
 .form-field {
   width: 528px;
   height: 58px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 10px;
@@ -381,13 +341,11 @@ a {
 .form-field__box:focus {
   fill: var(--heder-link-color);
   outline: 1px solid var(--heder-link-color);
-  -webkit-transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .form-field input {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 448px;
   height: 40px;
   border: none;
@@ -398,7 +356,6 @@ a {
 .form-field input:focus {
   fill: var(--heder-link-color);
   outline: 1px solid var(--heder-link-color);
-  -webkit-transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
@@ -412,7 +369,6 @@ a {
 .form-field__icon:focus {
   fill: var(--heder-link-color);
   outline: 1px solid var(--heder-link-color);
-  -webkit-transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
@@ -443,13 +399,8 @@ a {
 .form-coment {
   width: 528px;
   height: 138px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 20px;
@@ -486,7 +437,6 @@ a {
 .form-coment__text:focus {
   fill: var(--heder-link-color);
   outline: 1px solid var(--heder-link-color);
-  -webkit-transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
@@ -494,12 +444,8 @@ a {
   width: 528px;
   height: 24px;
   margin-bottom: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   font-family: Roboto;
   font-style: Regular;
   font-size: 14px;
@@ -509,12 +455,8 @@ a {
 }
 
 .form-policy__label {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .form-policy__icon {
@@ -550,12 +492,8 @@ a {
 }
 
 .section-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .section-content .section-content__list + .section-content__list {
@@ -571,12 +509,8 @@ a {
   height: 120px;
   background-color: var(--section-background-color);
   margin-bottom: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .section-content__icon {
@@ -610,12 +544,8 @@ a {
 }
 
 .activities {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .activities .li-worck + .li-worck {
@@ -629,8 +559,7 @@ a {
   width: 370px;
   height: 70px;
   background-color: var(--worck-card-color);
-  -webkit-transform: translatey(224px);
-          transform: translatey(224px);
+  transform: translatey(224px);
 }
 
 .activities__title {
@@ -651,20 +580,15 @@ a {
 }
 
 .our-team {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .team-set {
   width: 270px;
   background-color: var(--body-color);
   text-align: center;
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -691,8 +615,6 @@ a {
 
 /* __________________________________________________________СОЦ-СЕТИ_____________________________________ */
 .social-set {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 206px;
   height: 44px;
@@ -700,35 +622,24 @@ a {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .social-set__lable {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .social-set__link {
   width: 44px;
   height: 44px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   fill: var(--border-color);
   border-radius: 50%;
-  -webkit-transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
@@ -757,12 +668,8 @@ a {
 }
 
 .customers-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-bottom: 94px;
 }
 
@@ -781,16 +688,9 @@ a {
   margin: auto;
   padding: 0;
   border: 1px solid var(--border-color);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  justify-content: center;
+  align-items: center;
   transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
@@ -803,12 +703,8 @@ a {
 
 /* __________________________________________________ВТОРАЯ СТРАНИЦА____________________________________ */
 .filter {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
@@ -847,7 +743,6 @@ a {
   border-radius: 4px;
   padding: 6px 22px;
   border: none;
-  -webkit-transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
@@ -855,19 +750,13 @@ a {
 .button-groop:focus {
   background-color: var(--heder-link-color);
   color: var(--body-color);
-  -webkit-box-shadow: 0px 4px 4px 0px #00000040;
-          box-shadow: 0px 4px 4px 0px #00000040;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
 }
 
 .flex-contener {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .flex-article {
@@ -875,21 +764,19 @@ a {
   background-color: var(--sub-txt-color);
   margin-right: 30px;
   margin-bottom: 30px;
-  -webkit-transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .flex-article:hover,
 .flex-article:focus {
-  -webkit-box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000f, 0px 1px 1px 0px #0000001f;
-          box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000f, 0px 1px 1px 0px #0000001f;
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.1607843137), 0px 4px 4px 0px rgba(0, 0, 0, 0.0588235294), 0px 1px 1px 0px rgba(0, 0, 0, 0.1215686275);
 }
 
 .flex-article:nth-child(3n) {
   margin-right: 0px;
 }
 
-.flex-article:nth-last-child(-n + 3) {
+.flex-article:nth-last-child(-n+3) {
   margin-bottom: 0px;
 }
 
@@ -917,8 +804,6 @@ a {
   top: 0;
   left: 0;
   margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -939,19 +824,13 @@ a {
   font-family: Roboto;
   font-size: 18px;
   line-height: 1.55;
-  -webkit-transform: translateY(296px);
-          transform: translateY(296px);
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
+  transform: translateY(296px);
+  transition-duration: 250ms;
 }
 
 .flex-article:hover .flex-text {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 1;
 }
 
@@ -973,12 +852,8 @@ a {
 }
 
 .nav-foot {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  align-items: baseline;
 }
 
 .footer-container {
@@ -998,7 +873,6 @@ a {
   font-weight: 400;
   font-style: normal;
   margin-bottom: 9px;
-  -webkit-transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
@@ -1020,7 +894,6 @@ a {
   font-weight: 400;
   font-style: normal;
   margin-bottom: 9px;
-  -webkit-transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
@@ -1030,7 +903,6 @@ a {
   letter-spacing: 0.03em;
   font-weight: 400;
   font-style: normal;
-  -webkit-transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
@@ -1048,7 +920,6 @@ a {
   color: var(--body-color);
   font-style: normal;
   text-transform: uppercase;
-  -webkit-transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
@@ -1077,8 +948,7 @@ a {
 }
 
 .input-mail {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 358px;
   height: 50px;
   background-color: var(--section1-background-color);
@@ -1094,5 +964,4 @@ a {
   margin-left: 10px;
   margin-bottom: -7px;
   fill: var(--section2-background-color);
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
